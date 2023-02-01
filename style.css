@@ -3,12 +3,15 @@ body{
 }
 
 main{
+    width: 70%;
+    gap: 1.2rem;
+    margin: auto;
+    display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-areas:"h h"
-                        "a n"
-                        "f f";
-     gap: 1.2rem;
-     display: grid;
+    grid-template-areas:
+        "h h"
+        "a n"
+        "f f";
 }
 header{
     grid-area: "h";
@@ -23,17 +26,44 @@ article{
 footer{
     grid-area: "f";
 }
-
+legend{
+    width: 20%;
+    text-align: right;
+    background: beige;
+    color: rgb(88, 23, 45);
+    border-radius: 5px;
+    padding: 2px 30px;
+}
+label{
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+}
 header, article, nav, footer{
     background-color: brown;
     padding: 1em;
 }
+input label{
+
+}
+input{
+    padding: 5px;
+}
 fieldset{
 border: white 2px solid;
+margin: 15px;
+padding: 15px;
+}
+*{
+    box-sizing: border-box;
 }
 @media screen and(max-width: 1200px) {
     main{
     grid-template-columns: 2fr 1fr;
+    }
+    legend{
+        width: 50%;
+        text-align: center;
     }
 }
 @media screen and(max-width: 600px) {
