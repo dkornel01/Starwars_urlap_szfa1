@@ -32,7 +32,17 @@
             <form action="#" method="post">
                 <fieldset>
                     <legend>Szín megadás</legend>
-                    <label for=""></label>
+                    <label for="Szín">Szín</label>
+                    <input type="color" name="Szín" id="Szín"><br>
+                    <label for="RGB">RBG 1</label>
+                    <input type="range" id="rgb_szam" value="50" oninput="amountInput.form.amount.value=this.value">
+                    <input type="number" name="amountInput" min="0" max="359" value="0" oninput="rgb_szam.form.vaNumber.value=this.value"><br>
+                    <label for="RGB">RBG 2</label>
+                    <input type="range" id="rgb_szam1" value="50" oninput="amountInput1.form.amount.value=this.value">
+                    <input type="number" name="amountInput1" min="0" max="359" value="0" oninput="rgb_szam1.form.vaNumber.value=this.value"><br>
+                    <label for="RGB">RBG 3</label>
+                    <input type="range" id="rgb_szam2" value="50" oninput="amountInput2.form.amount.value=this.value">
+                    <input type="number" name="amountInput2" min="0" max="359" value="0" oninput="rgb_szam2.form.vaNumber.value=this.value"><br>
                 </fieldset>
             </form>
         </article>

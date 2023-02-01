@@ -6,7 +6,7 @@ main{
     width: 70%;
     margin: auto;
     display: grid;
-    gap: 1.2em;
+    gap: 1.2rem;
     grid-template-columns: 4fr 1fr;
     grid-template-areas:
         "h h"
@@ -21,7 +21,7 @@ nav{
 }
 article{
     grid-area:"a";
-    height: 40vh;
+    height: 50vh;
 }
 footer{
     grid-area:"f";
@@ -38,7 +38,7 @@ legend{
     width: 20%;
     text-align: right;
     background: beige;
-    color: rgb(88, 23, 45);
+    color: rgb(88, 23, 23);
     border-radius: 5px;
     padding: 2px 30px;
 }
@@ -52,7 +52,7 @@ header, article, nav, footer{
     padding: 1em;
 }
 input label{
-
+ margin-top: 20px;
 }
 input{
     padding: 5px;
@@ -69,6 +69,10 @@ padding: 15px;
     main{
     grid-template-columns: 2fr 1fr;
     }
+    header, article, nav, footer{
+        background-color: rgb(112, 45, 45);
+    }
+
     legend{
         width: 50%;
         text-align: center;
@@ -76,11 +80,15 @@ padding: 15px;
 }
 @media screen and(max-width: 600px) {
    main{
-        background-color: burlywood;
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-areas:"h"
                             "n"
                             "a"
                             "f";
         }
+
+    header, article, nav, footer{
+        background-color: rgb(88,23,23);
+    }
 }
