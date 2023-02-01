@@ -27,7 +27,7 @@
                     <label for="Keresztnév">Keresztnév</label>
                     <input type="text" id="Keresztnév" placeholder="Adó" name="Keresztnév">
                 </fieldset>
-                <input type="submit" value="küldés"> 
+                <input type="submit" id="kozepre" value="küldés"> 
             </form>
             <form action="#" method="post">
                 <fieldset>
@@ -35,14 +35,14 @@
                     <label for="Szín">Szín</label>
                     <input type="color" name="Szín" id="Szín"><br>
                     <label for="RGB">RBG 1</label>
-                    <input type="range" id="rgb_szam" value="50" oninput="amountInput.form.amount.value=this.value">
-                    <input type="number" name="amountInput" min="0" max="359" value="0" oninput="rgb_szam.form.vaNumber.value=this.value"><br>
+                    <input type="range" id="Rgb_szam"  min="0" max="360" value="0" oninput="this.form.amountInput.value=this.value">
+                    <input type="number" name="amountInput" min="0" max="359" value="0" oninput="this.form.RGb_szam.value=this.value"><br>
                     <label for="RGB">RBG 2</label>
-                    <input type="range" id="rgb_szam1" value="50" oninput="amountInput1.form.amount.value=this.value">
-                    <input type="number" name="amountInput1" min="0" max="359" value="0" oninput="rgb_szam1.form.vaNumber.value=this.value"><br>
+                    <input type="range" id="Rgb_szam1" min="0" max="360" value="0" oninput="this.form.amountInput1.value=this.value">
+                    <input type="number" name="amountInput1" min="0" max="359" value="0" oninput="this.form.Rgb_szam1.value=this.value"><br>
                     <label for="RGB">RBG 3</label>
-                    <input type="range" id="rgb_szam2" value="50" oninput="amountInput2.form.amount.value=this.value">
-                    <input type="number" name="amountInput2" min="0" max="359" value="0" oninput="rgb_szam2.form.vaNumber.value=this.value"><br>
+                    <input type="range" id="Rgb_szam2"  min="0" max="360" value="0" oninput="this.form.amountInput2.value=this.value">
+                    <input type="number" name="amountInput2" min="0" max="359" value="0" oninput="this.form.Rgb_szam2.value=this.value"><br>
                 </fieldset>
             </form>
         </article>

@@ -15,6 +15,7 @@ main{
 }
 header{
     grid-area:"h";
+    background-image: url(img/header.jpg);
 }
 nav{
     grid-area:"n";
@@ -23,6 +24,12 @@ article{
     grid-area:"a";
     height: 50vh;
 }
+
+#kozepre{
+    margin-right: auto;
+    margin-left:auto ;
+}
+
 footer{
     grid-area:"f";
 }
