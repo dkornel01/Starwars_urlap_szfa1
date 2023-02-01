@@ -4,9 +4,9 @@ body{
 
 main{
     width: 70%;
-    gap: 1.2rem;
     margin: auto;
     display: grid;
+    gap: 1.2em;
     grid-template-columns: 4fr 1fr;
     grid-template-areas:
         "h h"
@@ -14,18 +14,26 @@ main{
         "f f";
 }
 header{
-    grid-area: "h";
+    grid-area:"h";
 }
 nav{
-    grid-area: "n";
+    grid-area:"n";
 }
 article{
-    grid-area: "a";
+    grid-area:"a";
     height: 40vh;
 }
 footer{
-    grid-area: "f";
+    grid-area:"f";
 }
+header, article, nav, footer{
+    background-color: rgb(194, 93, 93);
+    padding: 1em;
+}
+header,footer{
+    text-align: center;
+}
+
 legend{
     width: 20%;
     text-align: right;
