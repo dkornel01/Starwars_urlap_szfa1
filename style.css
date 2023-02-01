@@ -3,14 +3,12 @@ body{
 }
 
 main{
-    display: grid;
-    
     grid-template-columns: 4fr 1fr;
     grid-template-areas:"h h"
-                        "n n"
-                        "a a"
+                        "a n"
                         "f f";
      gap: 1.2rem;
+     display: grid;
 }
 header{
     grid-area: "h";
@@ -30,7 +28,9 @@ header, article, nav, footer{
     background-color: brown;
     padding: 1em;
 }
-
+fieldset{
+border: white 2px solid;
+}
 @media screen and(max-width: 1200px) {
     main{
     grid-template-columns: 2fr 1fr;
