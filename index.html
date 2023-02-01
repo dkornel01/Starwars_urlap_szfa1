@@ -8,26 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="box">
-        <h1>Űrlapok gyakorlása</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Fő oldal</a></li>
-            <li><a href="#">Tartalom</a></li>
-        </ul>
-    </nav>
-    <article>
-        <form action="#" method="get">
-            <label for="Vezetéknév">Vezetéknév</label>
-            <input type="text" id="Vezetéknév" placeholder="Szabó" name="Vezetéknév">
-            <label for="Keresztnév">Keresztnév</label>
-            <input type="text" id="Keresztnév" placeholder="Adó" name="Keresztnév">
-            <input type="submit" value="küldés"> 
-        </form>
-    </article>
-    <footer>
-        <h2>&Copy</h2>
-    </footer>
+    <main>
+        <header class="box">
+            <h1>Űrlapok gyakorlása</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Fő oldal</a></li>
+                <li><a href="#">Tartalom</a></li>
+            </ul>
+        </nav>
+        <article>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Adatok</legend>
+                    <label for="Vezetéknév">Vezetéknév</label>
+                    <input type="text" id="Vezetéknév" placeholder="Szabó" name="Vezetéknév"><br>
+                    <label for="Keresztnév">Keresztnév</label>
+                    <input type="text" id="Keresztnév" placeholder="Adó" name="Keresztnév">
+                </fieldset>
+                <input type="submit" value="küldés"> 
+            </form>
+        </article>
+        <footer>
+            <h2>&Copy</h2>
+        </footer>
+    </main>
 </body>
 </html>
